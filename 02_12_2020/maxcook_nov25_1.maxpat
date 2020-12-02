@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 78.0, 879.0, 717.0 ],
+		"rect" : [ 34.0, 79.0, 879.0, 717.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -2038,7 +2038,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 2,
 									"numoutlets" : 3,
-									"outlettype" : [ "int", "float", "float" ],
+									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 96.477279999999993, 325.0, 199.0, 22.0 ],
 									"text" : "spin"
 								}
@@ -4613,22 +4613,22 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "ossia.pvh.oscoutput.module.maxpat",
-				"bootpath" : "~/src/Max/PVH-maxlib_ossia/ossia.pvh.oscoutput",
-				"patcherrelativepath" : "../../../Max/PVH-maxlib_ossia/ossia.pvh.oscoutput",
+				"bootpath" : "~/src/PVH-maxlib_ossia/ossia.pvh.oscoutput",
+				"patcherrelativepath" : "../../PVH-maxlib_ossia/ossia.pvh.oscoutput",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ossia.pvh.oscoutput.model.maxpat",
-				"bootpath" : "~/src/Max/PVH-maxlib_ossia/ossia.pvh.oscoutput",
-				"patcherrelativepath" : "../../../Max/PVH-maxlib_ossia/ossia.pvh.oscoutput",
+				"bootpath" : "~/src/PVH-maxlib_ossia/ossia.pvh.oscoutput",
+				"patcherrelativepath" : "../../PVH-maxlib_ossia/ossia.pvh.oscoutput",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ossia.nav.oscroute.model.maxpat",
-				"bootpath" : "~/src/Max/tml-ossia/nav/nav.oscroute",
-				"patcherrelativepath" : "../../../Max/tml-ossia/nav/nav.oscroute",
+				"bootpath" : "~/src/tml-ossia/nav/nav.oscroute",
+				"patcherrelativepath" : "../../tml-ossia/nav/nav.oscroute",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -4640,148 +4640,141 @@
 			}
 , 			{
 				"name" : "ossia.namespacebrowser.model.maxpat",
-				"bootpath" : "~/src/Max/tml-ossia/utilities/namespacebrowser",
-				"patcherrelativepath" : "../../../Max/tml-ossia/utilities/namespacebrowser",
+				"bootpath" : "~/src/tml-ossia/utilities/namespacebrowser",
+				"patcherrelativepath" : "../../tml-ossia/utilities/namespacebrowser",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ossia.pvh.oscoutput.view.maxpat",
-				"bootpath" : "~/src/Max/PVH-maxlib_ossia/ossia.pvh.oscoutput",
-				"patcherrelativepath" : "../../../Max/PVH-maxlib_ossia/ossia.pvh.oscoutput",
+				"bootpath" : "~/src/PVH-maxlib_ossia/ossia.pvh.oscoutput",
+				"patcherrelativepath" : "../../PVH-maxlib_ossia/ossia.pvh.oscoutput",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ossia.nav.oscroute.view.maxpat",
-				"bootpath" : "~/src/Max/tml-ossia/nav/nav.oscroute",
-				"patcherrelativepath" : "../../../Max/tml-ossia/nav/nav.oscroute",
+				"bootpath" : "~/src/tml-ossia/nav/nav.oscroute",
+				"patcherrelativepath" : "../../tml-ossia/nav/nav.oscroute",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ossia.namespacebrowser.view.maxpat",
-				"bootpath" : "~/src/Max/tml-ossia/utilities/namespacebrowser",
-				"patcherrelativepath" : "../../../Max/tml-ossia/utilities/namespacebrowser",
+				"bootpath" : "~/src/tml-ossia/utilities/namespacebrowser",
+				"patcherrelativepath" : "../../tml-ossia/utilities/namespacebrowser",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.get_onscreen_position.js",
-				"bootpath" : "~/src/Max/tml-ossia/utilities/namespacebrowser",
-				"patcherrelativepath" : "../../../Max/tml-ossia/utilities/namespacebrowser",
+				"bootpath" : "~/src/tml-ossia/utilities/namespacebrowser",
+				"patcherrelativepath" : "../../tml-ossia/utilities/namespacebrowser",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sensor_speed_tester.maxpat",
-				"bootpath" : "~/src/Max/tml-ossia/utilities",
-				"patcherrelativepath" : "../../../Max/tml-ossia/utilities",
+				"bootpath" : "~/src/tml-ossia/utilities",
+				"patcherrelativepath" : "../../tml-ossia/utilities",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ossia.nav.scale.view.maxpat",
-				"bootpath" : "~/src/Max/tml-ossia/nav/nav.scale",
-				"patcherrelativepath" : "../../../Max/tml-ossia/nav/nav.scale",
+				"bootpath" : "~/src/tml-ossia/nav/nav.scale",
+				"patcherrelativepath" : "../../tml-ossia/nav/nav.scale",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ossia.nav.scale.module.maxpat",
-				"bootpath" : "~/src/Max/tml-ossia/nav/nav.scale",
-				"patcherrelativepath" : "../../../Max/tml-ossia/nav/nav.scale",
+				"bootpath" : "~/src/tml-ossia/nav/nav.scale",
+				"patcherrelativepath" : "../../tml-ossia/nav/nav.scale",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ossia.nav.scale.model.maxpat",
-				"bootpath" : "~/src/Max/tml-ossia/nav/nav.scale",
-				"patcherrelativepath" : "../../../Max/tml-ossia/nav/nav.scale",
+				"bootpath" : "~/src/tml-ossia/nav/nav.scale",
+				"patcherrelativepath" : "../../tml-ossia/nav/nav.scale",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "autoscale.maxpat",
-				"bootpath" : "~/src/Max/tml-ossia/data/autoscale",
-				"patcherrelativepath" : "../../../Max/tml-ossia/data/autoscale",
+				"bootpath" : "~/src/tml-ossia/data/autoscale",
+				"patcherrelativepath" : "../../tml-ossia/data/autoscale",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tml.delta.maxpat",
-				"bootpath" : "~/src/Max/tml-ossia/utilities",
-				"patcherrelativepath" : "../../../Max/tml-ossia/utilities",
+				"bootpath" : "~/src/tml-ossia/utilities",
+				"patcherrelativepath" : "../../tml-ossia/utilities",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "qom.maxpat",
-				"bootpath" : "~/src/Max/tml-ossia/utilities",
-				"patcherrelativepath" : "../../../Max/tml-ossia/utilities",
+				"bootpath" : "~/src/tml-ossia/utilities",
+				"patcherrelativepath" : "../../tml-ossia/utilities",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ossia.ngimu.model.maxpat",
-				"bootpath" : "~/src/Max/tml-ossia/sensors/ngimu",
-				"patcherrelativepath" : "../../../Max/tml-ossia/sensors/ngimu",
+				"bootpath" : "~/src/tml-ossia/sensors/ngimu",
+				"patcherrelativepath" : "../../tml-ossia/sensors/ngimu",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ossia.ngimu_receive.view.maxpat",
-				"bootpath" : "~/src/Max/tml-ossia/sensors/ngimu_receive",
-				"patcherrelativepath" : "../../../Max/tml-ossia/sensors/ngimu_receive",
+				"bootpath" : "~/src/tml-ossia/sensors/ngimu_receive",
+				"patcherrelativepath" : "../../tml-ossia/sensors/ngimu_receive",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "simple_cues.maxpat",
-				"bootpath" : "~/src/Max/tml-ossia/utilities/simple_cues",
-				"patcherrelativepath" : "../../../Max/tml-ossia/utilities/simple_cues",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "spin.maxpat",
-				"bootpath" : "~/src/Max/SearchPath/IRCAM/MuBuExamples/examples/riot",
-				"patcherrelativepath" : "../../../Max/SearchPath/IRCAM/MuBuExamples/examples/riot",
+				"bootpath" : "~/src/tml-ossia/utilities/simple_cues",
+				"patcherrelativepath" : "../../tml-ossia/utilities/simple_cues",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ossia.nav.oscroute.module.maxpat",
-				"bootpath" : "~/src/Max/tml-ossia/nav/nav.oscroute",
-				"patcherrelativepath" : "../../../Max/tml-ossia/nav/nav.oscroute",
+				"bootpath" : "~/src/tml-ossia/nav/nav.oscroute",
+				"patcherrelativepath" : "../../tml-ossia/nav/nav.oscroute",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ossia.imu.cook.1.maxpat",
-				"bootpath" : "~/src/Max/tml-ossia/sensors/ngimu_cook",
-				"patcherrelativepath" : "../../../Max/tml-ossia/sensors/ngimu_cook",
+				"bootpath" : "~/src/tml-ossia/sensors/ngimu_cook",
+				"patcherrelativepath" : "../../tml-ossia/sensors/ngimu_cook",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ossia.nav.rand.module.maxpat",
-				"bootpath" : "~/src/Max/tml-ossia/nav/ossia.nav.rand",
-				"patcherrelativepath" : "../../../Max/tml-ossia/nav/ossia.nav.rand",
+				"bootpath" : "~/src/tml-ossia/nav/ossia.nav.rand",
+				"patcherrelativepath" : "../../tml-ossia/nav/ossia.nav.rand",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ossia.nav.rand.model.maxpat",
-				"bootpath" : "~/src/Max/tml-ossia/nav/ossia.nav.rand",
-				"patcherrelativepath" : "../../../Max/tml-ossia/nav/ossia.nav.rand",
+				"bootpath" : "~/src/tml-ossia/nav/ossia.nav.rand",
+				"patcherrelativepath" : "../../tml-ossia/nav/ossia.nav.rand",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ossia.nav.rand.view.maxpat",
-				"bootpath" : "~/src/Max/tml-ossia/nav/ossia.nav.rand",
-				"patcherrelativepath" : "../../../Max/tml-ossia/nav/ossia.nav.rand",
+				"bootpath" : "~/src/tml-ossia/nav/ossia.nav.rand",
+				"patcherrelativepath" : "../../tml-ossia/nav/ossia.nav.rand",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -4848,10 +4841,7 @@
 , 			{
 				"name" : "jpink",
 				"default" : 				{
-					"elementcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
-					"patchlinecolor" : [ 0.65, 0.65, 0.65, 1.0 ],
-					"bgcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
-					"textcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
+					"selectioncolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
 					"clearcolor" : [ 0.113725, 0.607843, 0.607843, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "color",
@@ -4863,9 +4853,12 @@
 						"autogradient" : 0
 					}
 ,
-					"selectioncolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
 					"color" : [ 0.619608, 0.0, 0.360784, 1.0 ],
-					"accentcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ]
+					"accentcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
+					"bgcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
+					"patchlinecolor" : [ 0.65, 0.65, 0.65, 1.0 ],
+					"elementcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
+					"textcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
