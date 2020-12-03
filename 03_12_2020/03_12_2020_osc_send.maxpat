@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 131.0, 680.0, 634.0 ],
+		"rect" : [ 34.0, 79.0, 377.0, 318.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -56,7 +56,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 232.0, 93.0, 1033.0, 519.0 ],
+						"rect" : [ 564.0, 79.0, 1033.0, 519.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -84,7 +84,6 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"args" : [ "oscoutput8", 8808 ],
@@ -616,7 +615,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 858.909090909090992, 774.0, 97.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 8.0, 573.999999999999886, 97.0, 22.0 ],
+					"presentation_rect" : [ 210.0, 134.399999999999892, 97.0, 22.0 ],
 					"text" : "udpreceive 7701"
 				}
 
@@ -631,7 +630,7 @@
 					"outlettype" : [ "", "", "", "", "", "", "", "", "", "", "", "", "" ],
 					"patching_rect" : [ 858.909090909090992, 805.0, 139.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 8.0, 597.499999976157937, 139.0, 22.0 ],
+					"presentation_rect" : [ 210.0, 157.899999976157943, 139.0, 22.0 ],
 					"text" : "ossia.imu.cook.1 wheel2"
 				}
 
@@ -878,7 +877,7 @@
 					"patching_rect" : [ 539.0, 390.0, 150.0, 221.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 9,
-					"presentation_rect" : [ 210.0, 66.400000000000006, 467.0, 127.0 ],
+					"presentation_rect" : [ 196.0, 335.399999999999977, 467.0, 127.0 ],
 					"text" : "/gyro/avg bipolar\n/gyro/qom [2dimensional spin]  unipolar, more stable, as relating to spinning in general\n/gyro/spin is 3 dimensional\n\n/acc/avg bipolar\n/acc/qom unipolar, dirty tight dynamic up and down\n/acc/shake/ unipolar\n\nnotions of shakes are always acc, notions of spinning are always gyro"
 				}
 
@@ -892,7 +891,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 848.0, 548.0, 97.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 8.0, 510.0, 97.0, 22.0 ],
+					"presentation_rect" : [ 210.0, 70.400000000000006, 97.0, 22.0 ],
 					"text" : "udpreceive 7700"
 				}
 
@@ -907,7 +906,7 @@
 					"outlettype" : [ "", "", "", "", "", "", "", "", "", "", "", "", "" ],
 					"patching_rect" : [ 848.0, 579.0, 133.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 8.0, 534.0, 133.0, 22.0 ],
+					"presentation_rect" : [ 210.0, 94.400000000000006, 133.0, 22.0 ],
 					"text" : "ossia.imu.cook.1 wheel"
 				}
 
@@ -2371,316 +2370,8 @@
 					"patching_rect" : [ 1110.0, 478.5, 150.0, 33.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 4,
-					"presentation_rect" : [ 284.0, 190.399999999999892, 72.0, 60.0 ],
+					"presentation_rect" : [ 270.0, 459.399999999999864, 72.0, 60.0 ],
 					"text" : "spin, shake, intensity\nacg, qom"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"color" : [ 0.886274509803922, 0.0, 1.0, 1.0 ],
-					"id" : "obj-61",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patcher" : 					{
-						"fileversion" : 1,
-						"appversion" : 						{
-							"major" : 8,
-							"minor" : 1,
-							"revision" : 8,
-							"architecture" : "x64",
-							"modernui" : 1
-						}
-,
-						"classnamespace" : "box",
-						"rect" : [ 59.0, 103.0, 640.0, 480.0 ],
-						"bglocked" : 0,
-						"openinpresentation" : 0,
-						"default_fontsize" : 12.0,
-						"default_fontface" : 0,
-						"default_fontname" : "Arial",
-						"gridonopen" : 1,
-						"gridsize" : [ 15.0, 15.0 ],
-						"gridsnaponopen" : 1,
-						"objectsnaponopen" : 1,
-						"statusbarvisible" : 2,
-						"toolbarvisible" : 1,
-						"lefttoolbarpinned" : 0,
-						"toptoolbarpinned" : 0,
-						"righttoolbarpinned" : 0,
-						"bottomtoolbarpinned" : 0,
-						"toolbars_unpinned_last_save" : 0,
-						"tallnewobj" : 0,
-						"boxanimatetime" : 200,
-						"enablehscroll" : 1,
-						"enablevscroll" : 1,
-						"devicewidth" : 0.0,
-						"description" : "",
-						"digest" : "",
-						"tags" : "",
-						"style" : "",
-						"subpatcher_template" : "",
-						"assistshowspatchername" : 0,
-						"boxes" : [ 							{
-								"box" : 								{
-									"comment" : "",
-									"id" : "obj-2",
-									"index" : 1,
-									"maxclass" : "inlet",
-									"numinlets" : 0,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 96.477279999999993, 111.0, 30.0, 30.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"bubble" : 1,
-									"bubbleside" : 2,
-									"fontname" : "Arial",
-									"fontsize" : 12.0,
-									"id" : "obj-8",
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 289.158569, 207.0, 62.0, 39.0 ],
-									"text" : "threshold"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontname" : "Arial",
-									"fontsize" : 12.0,
-									"id" : "obj-7",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 276.158569, 247.5, 88.0, 22.0 ],
-									"text" : "loadmess 0.2"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontname" : "Arial",
-									"fontsize" : 12.0,
-									"format" : 6,
-									"id" : "obj-31",
-									"maxclass" : "flonum",
-									"numinlets" : 1,
-									"numoutlets" : 2,
-									"outlettype" : [ "", "bang" ],
-									"parameter_enable" : 0,
-									"patching_rect" : [ 276.158569, 277.0, 50.0, 22.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"bubble" : 1,
-									"bubbleside" : 0,
-									"id" : "obj-56",
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 259.158569, 500.0, 82.0, 39.0 ],
-									"text" : "spin intensity"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"bubble" : 1,
-									"bubbleside" : 0,
-									"id" : "obj-53",
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 170.143921000000006, 404.0, 81.199996999999996, 39.0 ],
-									"text" : "spin duration"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"bubble" : 1,
-									"bubbleside" : 0,
-									"id" : "obj-52",
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 76.900002000000001, 404.0, 56.199997000000003, 39.0 ],
-									"text" : "spinning"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"floatoutput" : 1,
-									"id" : "obj-107",
-									"maxclass" : "slider",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"parameter_enable" : 0,
-									"patching_rect" : [ 276.158569, 378.0, 21.0, 81.0 ],
-									"size" : 8.0
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontname" : "Arial",
-									"fontsize" : 12.0,
-									"format" : 6,
-									"id" : "obj-106",
-									"maxclass" : "flonum",
-									"numinlets" : 1,
-									"numoutlets" : 2,
-									"outlettype" : [ "", "bang" ],
-									"parameter_enable" : 0,
-									"patching_rect" : [ 275.158569, 474.5, 50.0, 22.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontname" : "Arial",
-									"fontsize" : 12.0,
-									"format" : 6,
-									"id" : "obj-84",
-									"maxclass" : "flonum",
-									"numinlets" : 1,
-									"numoutlets" : 2,
-									"outlettype" : [ "", "bang" ],
-									"parameter_enable" : 0,
-									"patching_rect" : [ 185.743927000000014, 380.0, 50.0, 22.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-16",
-									"maxclass" : "toggle",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "int" ],
-									"parameter_enable" : 0,
-									"patching_rect" : [ 96.477279999999993, 380.0, 22.0, 22.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"candicane2" : [ 0.588235, 0.827451, 0.431373, 1.0 ],
-									"candicane3" : [ 0.733333, 0.035294, 0.788235, 1.0 ],
-									"candicane4" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
-									"candycane" : 7,
-									"id" : "obj-5",
-									"maxclass" : "multislider",
-									"numinlets" : 1,
-									"numoutlets" : 2,
-									"outlettype" : [ "", "" ],
-									"parameter_enable" : 0,
-									"patching_rect" : [ 96.477279999999993, 179.0, 60.391936999999999, 127.0 ],
-									"setminmax" : [ -2.0, 2.0 ],
-									"setstyle" : 1,
-									"size" : 3,
-									"slidercolor" : [ 0.439216, 0.623529, 0.07451, 1.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-1",
-									"maxclass" : "newobj",
-									"numinlets" : 2,
-									"numoutlets" : 3,
-									"outlettype" : [ "", "", "" ],
-									"patching_rect" : [ 96.477279999999993, 325.0, 199.0, 22.0 ],
-									"text" : "spin"
-								}
-
-							}
- ],
-						"lines" : [ 							{
-								"patchline" : 								{
-									"destination" : [ "obj-107", 0 ],
-									"midpoints" : [ 285.977280000000007, 363.0, 285.658569, 363.0 ],
-									"source" : [ "obj-1", 2 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-16", 0 ],
-									"midpoints" : [ 105.977279999999993, 349.0, 105.977279999999993, 349.0 ],
-									"source" : [ "obj-1", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-84", 0 ],
-									"midpoints" : [ 195.977280000000007, 374.0, 195.243927000000014, 374.0 ],
-									"source" : [ "obj-1", 1 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-106", 0 ],
-									"midpoints" : [ 285.658569, 460.5, 284.658569, 460.5 ],
-									"source" : [ "obj-107", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-5", 0 ],
-									"source" : [ "obj-2", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-1", 1 ],
-									"source" : [ "obj-31", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-1", 0 ],
-									"source" : [ "obj-5", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-31", 0 ],
-									"source" : [ "obj-7", 0 ]
-								}
-
-							}
- ]
-					}
-,
-					"patching_rect" : [ 959.0, 385.0, 41.0, 22.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 117.0, 70.400000000000006, 41.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"description" : "",
-						"digest" : "",
-						"globalpatchername" : "",
-						"tags" : ""
-					}
-,
-					"text" : "p spin"
 				}
 
 			}
@@ -2987,7 +2678,7 @@
 					"patching_rect" : [ 1110.0, 412.5, 150.0, 60.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 6,
-					"presentation_rect" : [ 210.0, 190.399999999999892, 72.0, 87.0 ],
+					"presentation_rect" : [ 196.0, 459.399999999999864, 72.0, 87.0 ],
 					"text" : "gyro avg, bipolar\ngyro qom\nacc avg, bipolar\nacc qom"
 				}
 
@@ -3289,13 +2980,12 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-53",
-									"linecount" : 2,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 60.0, 42.5, 57.0, 35.0 ],
-									"text" : "0.024372"
+									"text" : "0."
 								}
 
 							}
@@ -3684,7 +3374,7 @@
 					"patching_rect" : [ 518.0, 284.0, 151.0, 47.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 210.0, 281.399999999999864, 233.5, 33.0 ],
+					"presentation_rect" : [ 196.0, 550.399999999999864, 233.5, 33.0 ],
 					"text" : "when all nav oscroute params named same, and turn off one, all fail."
 				}
 
@@ -3699,7 +3389,7 @@
 					"patching_rect" : [ 667.5, 284.0, 150.0, 47.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 358.0, 190.399999999999892, 150.0, 47.0 ],
+					"presentation_rect" : [ 344.0, 459.399999999999864, 150.0, 47.0 ],
 					"text" : "low pass filter acc\nhigh pass filter gyro\n"
 				}
 
@@ -3726,7 +3416,7 @@
 					"patching_rect" : [ 366.0, 284.0, 150.0, 60.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 4,
-					"presentation_rect" : [ 505.0, 190.399999999999892, 90.0, 60.0 ],
+					"presentation_rect" : [ 491.0, 459.399999999999864, 90.0, 60.0 ],
 					"text" : "7800 sensor1\n7801 sensor2\n7802 sensor3\n7803 sensor4"
 				}
 
