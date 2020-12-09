@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 307.0, 704.0, 709.0 ],
+		"rect" : [ 182.0, 174.0, 343.0, 675.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -66,7 +66,7 @@
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 180.0, 285.0, 150.0, 225.0 ],
+					"patching_rect" : [ 180.0, 240.0, 150.0, 225.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -80,7 +80,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 180.0, 75.0, 108.0, 167.0 ],
+					"patching_rect" : [ 180.0, 60.0, 108.0, 167.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 12,
 					"presentation_rect" : [ 297.0, 132.0, 108.0, 167.0 ],
@@ -117,7 +117,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "float" ],
+					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 15.0, 15.0, 30.0, 30.0 ]
 				}
 
@@ -142,7 +142,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 180.0, 555.0, 113.0, 22.0 ],
+					"patching_rect" : [ 180.0, 480.0, 113.0, 22.0 ],
 					"text" : "ossia.model #1"
 				}
 

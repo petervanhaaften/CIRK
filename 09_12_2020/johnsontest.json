@@ -1,0 +1,13 @@
+{
+	"asdf1" : 	{
+		"johntest/seq1" : 1110,
+		"johntest/seq2" : 2110,
+		"johntest/seq3" : "*",
+		"johntest/seq4" : "*",
+		"johntest/seq5" : "*",
+		"johntest/seq6" : "*",
+		"johntest/seq7" : "*",
+		"johntest/value" : 0
+	}
+
+}
