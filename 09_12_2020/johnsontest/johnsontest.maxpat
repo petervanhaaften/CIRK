@@ -132,35 +132,35 @@
 		"dependency_cache" : [ 			{
 				"name" : "simple_cues.maxpat",
 				"bootpath" : "~/src/tml-ossia/utilities/simple_cues",
-				"patcherrelativepath" : "../../tml-ossia/utilities/simple_cues",
+				"patcherrelativepath" : "../../../tml-ossia/utilities/simple_cues",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ossia.pvh.johnson1.module.maxpat",
 				"bootpath" : "~/src/PVH-maxlib_ossia/control/ossia.pvh.johnson1",
-				"patcherrelativepath" : "../../PVH-maxlib_ossia/control/ossia.pvh.johnson1",
+				"patcherrelativepath" : "../../../PVH-maxlib_ossia/control/ossia.pvh.johnson1",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ossia.pvh.johnson1.view.maxpat",
 				"bootpath" : "~/src/PVH-maxlib_ossia/control/ossia.pvh.johnson1",
-				"patcherrelativepath" : "../../PVH-maxlib_ossia/control/ossia.pvh.johnson1",
+				"patcherrelativepath" : "../../../PVH-maxlib_ossia/control/ossia.pvh.johnson1",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ossia.pvh.johnson1.model.maxpat",
 				"bootpath" : "~/src/PVH-maxlib_ossia/control/ossia.pvh.johnson1",
-				"patcherrelativepath" : "../../PVH-maxlib_ossia/control/ossia.pvh.johnson1",
+				"patcherrelativepath" : "../../../PVH-maxlib_ossia/control/ossia.pvh.johnson1",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "johnson1max_3.js",
 				"bootpath" : "~/src/PVH-maxlib_ossia/control/ossia.pvh.johnson1/include",
-				"patcherrelativepath" : "../../PVH-maxlib_ossia/control/ossia.pvh.johnson1/include",
+				"patcherrelativepath" : "../../../PVH-maxlib_ossia/control/ossia.pvh.johnson1/include",
 				"type" : "TEXT",
 				"implicit" : 1
 			}

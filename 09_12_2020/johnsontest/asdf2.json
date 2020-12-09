@@ -1,0 +1,13 @@
+-{
+	"asdf1" : 	{
+		"johntest/seq_five" : "*",
+		"johntest/seq_four" : "*",
+		"johntest/seq_one" : 110,
+		"johntest/seq_seven" : "*",
+		"johntest/seq_six" : "*",
+		"johntest/seq_three" : "*",
+		"johntest/seq_two" : "*",
+		"johntest/value" : 0
+	}
+
+}

@@ -1,0 +1,14 @@
+{
+	"test1" : 	{
+		"johntest/origin" : "*",
+		"johntest/seq_five" : "*",
+		"johntest/seq_four" : "*",
+		"johntest/seq_one" : 1110,
+		"johntest/seq_seven" : "*",
+		"johntest/seq_six" : "*",
+		"johntest/seq_three" : "*",
+		"johntest/seq_two" : 2110,
+		"johntest/value" : 0
+	}
+
+}

@@ -1,0 +1,10 @@
+/johntest/origin	string: "0010"
+/johntest/seq_five	string: ""
+/johntest/seq_four	string: ""
+/johntest/seq_one	string: "110"
+/johntest/seq_seven	string: ""
+/johntest/seq_six	string: ""
+/johntest/seq_three	string: ""
+/johntest/seq_two	string: ""
+/johntest/seq_zero	string: "0110"
+/johntest/value	int: 0
