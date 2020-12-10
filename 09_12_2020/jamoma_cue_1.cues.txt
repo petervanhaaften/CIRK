@@ -79,7 +79,7 @@
 /baton1-johnson2/seq6 0
 /baton1-johnson2/seq7 0
 # 
-/baton1-scale/degree 2
+/baton1-scale/degree 1
 /baton1-scale/scale 3
 # 
 /baton2-jackson/origin 0
