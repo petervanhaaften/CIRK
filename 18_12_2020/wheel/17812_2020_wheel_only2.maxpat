@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 37.0, 79.0, 353.0, 202.0 ],
+		"rect" : [ 34.0, 79.0, 353.0, 202.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -108,7 +108,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 955.0, 79.0, 669.0, 479.0 ],
+						"rect" : [ 34.0, 291.0, 669.0, 479.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -861,7 +861,7 @@
 					"patching_rect" : [ 19.0, 503.0, 97.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 210.0, 134.399999999999892, 97.0, 22.0 ],
-					"text" : "udpreceive 7701"
+					"text" : "udpreceive 7700"
 				}
 
 			}
@@ -1122,7 +1122,7 @@
 					"patching_rect" : [ 19.0, 274.0, 97.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 210.0, 70.400000000000006, 97.0, 22.0 ],
-					"text" : "udpreceive 7701"
+					"text" : "udpreceive 7700"
 				}
 
 			}
@@ -2944,9 +2944,13 @@
 , 			{
 				"name" : "jpink",
 				"default" : 				{
-					"color" : [ 0.619608, 0.0, 0.360784, 1.0 ],
-					"elementcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
+					"textcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
+					"accentcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
 					"patchlinecolor" : [ 0.65, 0.65, 0.65, 1.0 ],
+					"bgcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
+					"elementcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
+					"color" : [ 0.619608, 0.0, 0.360784, 1.0 ],
+					"selectioncolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
 					"clearcolor" : [ 0.113725, 0.607843, 0.607843, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "color",
@@ -2957,11 +2961,7 @@
 						"proportion" : 0.39,
 						"autogradient" : 0
 					}
-,
-					"selectioncolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
-					"bgcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
-					"accentcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
-					"textcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ]
+
 				}
 ,
 				"parentstyle" : "",
