@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 35.0, 79.0, 868.0, 493.0 ],
+		"rect" : [ 80.0, 295.0, 1041.0, 830.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,92 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-108",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 370.0, 821.0, 150.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 52.0, 761.0, 96.0, 20.0 ],
+					"text" : "club1 (1-3)"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-106",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 355.0, 806.0, 150.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 175.0, 761.0, 150.0, 20.0 ],
+					"text" : "club2 (4-6)"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-104",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 340.0, 791.0, 150.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 325.0, 761.0, 150.0, 20.0 ],
+					"text" : "club3 (7-8)"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-99",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "knobby_emu.maxpat",
+					"numinlets" : 0,
+					"numoutlets" : 0,
+					"offset" : [ 0.0, 0.0 ],
+					"patching_rect" : [ 536.0000159740448, 574.0, 128.0, 128.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 36.0, 570.999998927116394, 362.0, 185.0 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-55",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 652.0, 465.0, 58.0, 22.0 ],
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 13.0,
+					"id" : "obj-45",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 652.0, 495.0, 111.0, 23.0 ],
+					"text" : "port \"from Max 1\""
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-28",
 					"maxclass" : "newobj",
@@ -3127,6 +3213,14 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-67", 0 ],
+					"midpoints" : [ 661.5, 528.0, 525.5, 528.0, 525.5, 486.0, 389.5, 486.0 ],
+					"source" : [ "obj-45", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-69", 0 ],
 					"source" : [ "obj-5", 12 ]
 				}
@@ -3230,6 +3324,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-84", 2 ],
 					"source" : [ "obj-54", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-45", 0 ],
+					"source" : [ "obj-55", 0 ]
 				}
 
 			}
@@ -3385,9 +3486,27 @@
 			}
  ],
 		"parameters" : 		{
+			"obj-13::obj-20::obj-2::obj-144" : [ "live.text[26]", "live.text", 0 ],
+			"obj-13::obj-20::obj-2::obj-145" : [ "live.text[25]", "live.text", 0 ],
+			"obj-13::obj-20::obj-2::obj-183" : [ "live.numbox[9]", "live.numbox", 0 ],
+			"obj-13::obj-2::obj-2::obj-144" : [ "live.text[147]", "live.text", 0 ],
+			"obj-13::obj-2::obj-2::obj-145" : [ "live.text[146]", "live.text", 0 ],
+			"obj-13::obj-2::obj-2::obj-183" : [ "live.numbox[1]", "live.numbox", 0 ],
+			"obj-14::obj-20::obj-2::obj-144" : [ "live.text[149]", "live.text", 0 ],
+			"obj-14::obj-20::obj-2::obj-145" : [ "live.text[148]", "live.text", 0 ],
+			"obj-14::obj-20::obj-2::obj-183" : [ "live.numbox[2]", "live.numbox", 0 ],
+			"obj-14::obj-2::obj-2::obj-144" : [ "live.text[150]", "live.text", 0 ],
+			"obj-14::obj-2::obj-2::obj-145" : [ "live.text[151]", "live.text", 0 ],
+			"obj-14::obj-2::obj-2::obj-183" : [ "live.numbox[3]", "live.numbox", 0 ],
+			"obj-15::obj-20::obj-2::obj-144" : [ "live.text[152]", "live.text", 0 ],
+			"obj-15::obj-20::obj-2::obj-145" : [ "live.text[153]", "live.text", 0 ],
+			"obj-15::obj-20::obj-2::obj-183" : [ "live.numbox[4]", "live.numbox", 0 ],
+			"obj-15::obj-2::obj-2::obj-144" : [ "live.text[154]", "live.text", 0 ],
+			"obj-15::obj-2::obj-2::obj-145" : [ "live.text[155]", "live.text", 0 ],
+			"obj-15::obj-2::obj-2::obj-183" : [ "live.numbox[5]", "live.numbox", 0 ],
 			"obj-17::obj-2::obj-10::obj-10::obj-145" : [ "live.menu[34]", "live.menu", 0 ],
 			"obj-17::obj-2::obj-10::obj-196" : [ "live.text[158]", "live.text", 0 ],
-			"obj-17::obj-2::obj-10::obj-32" : [ "live.text[149]", "live.text", 0 ],
+			"obj-17::obj-2::obj-10::obj-32" : [ "live.text[156]", "live.text", 0 ],
 			"obj-17::obj-2::obj-10::obj-7" : [ "live.text[159]", "live.text", 0 ],
 			"obj-17::obj-2::obj-182" : [ "live.text[162]", "live.text[4]", 0 ],
 			"obj-17::obj-2::obj-7::obj-123::obj-14" : [ "live.text[161]", "live.text", 0 ],
@@ -3651,6 +3770,66 @@
 			}
 ,
 			"parameter_overrides" : 			{
+				"obj-13::obj-2::obj-2::obj-144" : 				{
+					"parameter_longname" : "live.text[147]"
+				}
+,
+				"obj-13::obj-2::obj-2::obj-145" : 				{
+					"parameter_longname" : "live.text[146]"
+				}
+,
+				"obj-13::obj-2::obj-2::obj-183" : 				{
+					"parameter_longname" : "live.numbox[1]"
+				}
+,
+				"obj-14::obj-20::obj-2::obj-144" : 				{
+					"parameter_longname" : "live.text[149]"
+				}
+,
+				"obj-14::obj-20::obj-2::obj-145" : 				{
+					"parameter_longname" : "live.text[148]"
+				}
+,
+				"obj-14::obj-20::obj-2::obj-183" : 				{
+					"parameter_longname" : "live.numbox[2]"
+				}
+,
+				"obj-14::obj-2::obj-2::obj-144" : 				{
+					"parameter_longname" : "live.text[150]"
+				}
+,
+				"obj-14::obj-2::obj-2::obj-145" : 				{
+					"parameter_longname" : "live.text[151]"
+				}
+,
+				"obj-14::obj-2::obj-2::obj-183" : 				{
+					"parameter_longname" : "live.numbox[3]"
+				}
+,
+				"obj-15::obj-20::obj-2::obj-144" : 				{
+					"parameter_longname" : "live.text[152]"
+				}
+,
+				"obj-15::obj-20::obj-2::obj-145" : 				{
+					"parameter_longname" : "live.text[153]"
+				}
+,
+				"obj-15::obj-20::obj-2::obj-183" : 				{
+					"parameter_longname" : "live.numbox[4]"
+				}
+,
+				"obj-15::obj-2::obj-2::obj-144" : 				{
+					"parameter_longname" : "live.text[154]"
+				}
+,
+				"obj-15::obj-2::obj-2::obj-145" : 				{
+					"parameter_longname" : "live.text[155]"
+				}
+,
+				"obj-15::obj-2::obj-2::obj-183" : 				{
+					"parameter_longname" : "live.numbox[5]"
+				}
+,
 				"obj-17::obj-2::obj-10::obj-10::obj-145" : 				{
 					"parameter_longname" : "live.menu[34]"
 				}
@@ -3660,7 +3839,7 @@
 				}
 ,
 				"obj-17::obj-2::obj-10::obj-32" : 				{
-					"parameter_longname" : "live.text[149]"
+					"parameter_longname" : "live.text[156]"
 				}
 ,
 				"obj-17::obj-2::obj-10::obj-7" : 				{
@@ -4442,78 +4621,78 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "ossia.ngimu.model.maxpat",
-				"bootpath" : "~/src/Max/tml-ossia/sensors/ngimu",
-				"patcherrelativepath" : "../../../../Max/tml-ossia/sensors/ngimu",
+				"bootpath" : "~/src/tml-ossia/sensors/ngimu",
+				"patcherrelativepath" : "../../../tml-ossia/sensors/ngimu",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "qom.maxpat",
-				"bootpath" : "~/src/Max/tml-ossia/utilities",
-				"patcherrelativepath" : "../../../../Max/tml-ossia/utilities",
+				"bootpath" : "~/src/tml-ossia/utilities",
+				"patcherrelativepath" : "../../../tml-ossia/utilities",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tml.delta.maxpat",
-				"bootpath" : "~/src/Max/tml-ossia/utilities",
-				"patcherrelativepath" : "../../../../Max/tml-ossia/utilities",
+				"bootpath" : "~/src/tml-ossia/utilities",
+				"patcherrelativepath" : "../../../tml-ossia/utilities",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ossia.ngimu_receive.view.maxpat",
-				"bootpath" : "~/src/Max/tml-ossia/sensors/ngimu_receive",
-				"patcherrelativepath" : "../../../../Max/tml-ossia/sensors/ngimu_receive",
+				"bootpath" : "~/src/tml-ossia/sensors/ngimu_receive",
+				"patcherrelativepath" : "../../../tml-ossia/sensors/ngimu_receive",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ossia.imu.cook.1.maxpat",
-				"bootpath" : "~/src/Max/tml-ossia/sensors/ngimu_cook",
-				"patcherrelativepath" : "../../../../Max/tml-ossia/sensors/ngimu_cook",
+				"bootpath" : "~/src/tml-ossia/sensors/ngimu_cook",
+				"patcherrelativepath" : "../../../tml-ossia/sensors/ngimu_cook",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ossia.nav.rand.module.maxpat",
-				"bootpath" : "~/src/Max/tml-ossia/nav/ossia.nav.rand",
-				"patcherrelativepath" : "../../../../Max/tml-ossia/nav/ossia.nav.rand",
+				"bootpath" : "~/src/tml-ossia/nav/ossia.nav.rand",
+				"patcherrelativepath" : "../../../tml-ossia/nav/ossia.nav.rand",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ossia.nav.rand.model.maxpat",
-				"bootpath" : "~/src/Max/tml-ossia/nav/ossia.nav.rand",
-				"patcherrelativepath" : "../../../../Max/tml-ossia/nav/ossia.nav.rand",
+				"bootpath" : "~/src/tml-ossia/nav/ossia.nav.rand",
+				"patcherrelativepath" : "../../../tml-ossia/nav/ossia.nav.rand",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ossia.nav.rand.view.maxpat",
-				"bootpath" : "~/src/Max/tml-ossia/nav/ossia.nav.rand",
-				"patcherrelativepath" : "../../../../Max/tml-ossia/nav/ossia.nav.rand",
+				"bootpath" : "~/src/tml-ossia/nav/ossia.nav.rand",
+				"patcherrelativepath" : "../../../tml-ossia/nav/ossia.nav.rand",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ossia.pvh.oscoutput.module.maxpat",
-				"bootpath" : "~/src/Max/PVH-maxlib_ossia/osc/ossia.pvh.oscoutput",
-				"patcherrelativepath" : "../../../../Max/PVH-maxlib_ossia/osc/ossia.pvh.oscoutput",
+				"bootpath" : "~/src/PVH-maxlib_ossia/OSC/ossia.pvh.oscoutput",
+				"patcherrelativepath" : "../../../PVH-maxlib_ossia/OSC/ossia.pvh.oscoutput",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ossia.pvh.oscoutput.model.maxpat",
-				"bootpath" : "~/src/Max/PVH-maxlib_ossia/osc/ossia.pvh.oscoutput",
-				"patcherrelativepath" : "../../../../Max/PVH-maxlib_ossia/osc/ossia.pvh.oscoutput",
+				"bootpath" : "~/src/PVH-maxlib_ossia/OSC/ossia.pvh.oscoutput",
+				"patcherrelativepath" : "../../../PVH-maxlib_ossia/OSC/ossia.pvh.oscoutput",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ossia.nav.oscroute.model.maxpat",
-				"bootpath" : "~/src/Max/tml-ossia/nav/nav.oscroute",
-				"patcherrelativepath" : "../../../../Max/tml-ossia/nav/nav.oscroute",
+				"bootpath" : "~/src/tml-ossia/nav/nav.oscroute",
+				"patcherrelativepath" : "../../../tml-ossia/nav/nav.oscroute",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -4525,99 +4704,155 @@
 			}
 , 			{
 				"name" : "ossia.namespacebrowser.model.maxpat",
-				"bootpath" : "~/src/Max/tml-ossia/utilities/namespacebrowser",
-				"patcherrelativepath" : "../../../../Max/tml-ossia/utilities/namespacebrowser",
+				"bootpath" : "~/src/tml-ossia/utilities/namespacebrowser",
+				"patcherrelativepath" : "../../../tml-ossia/utilities/namespacebrowser",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ossia.pvh.oscoutput.view.maxpat",
-				"bootpath" : "~/src/Max/PVH-maxlib_ossia/osc/ossia.pvh.oscoutput",
-				"patcherrelativepath" : "../../../../Max/PVH-maxlib_ossia/osc/ossia.pvh.oscoutput",
+				"bootpath" : "~/src/PVH-maxlib_ossia/OSC/ossia.pvh.oscoutput",
+				"patcherrelativepath" : "../../../PVH-maxlib_ossia/OSC/ossia.pvh.oscoutput",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ossia.nav.oscroute.view.maxpat",
-				"bootpath" : "~/src/Max/tml-ossia/nav/nav.oscroute",
-				"patcherrelativepath" : "../../../../Max/tml-ossia/nav/nav.oscroute",
+				"bootpath" : "~/src/tml-ossia/nav/nav.oscroute",
+				"patcherrelativepath" : "../../../tml-ossia/nav/nav.oscroute",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ossia.namespacebrowser.view.maxpat",
-				"bootpath" : "~/src/Max/tml-ossia/utilities/namespacebrowser",
-				"patcherrelativepath" : "../../../../Max/tml-ossia/utilities/namespacebrowser",
+				"bootpath" : "~/src/tml-ossia/utilities/namespacebrowser",
+				"patcherrelativepath" : "../../../tml-ossia/utilities/namespacebrowser",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.get_onscreen_position.js",
-				"bootpath" : "~/src/Max/tml-ossia/utilities/namespacebrowser",
-				"patcherrelativepath" : "../../../../Max/tml-ossia/utilities/namespacebrowser",
+				"bootpath" : "~/src/tml-ossia/utilities/namespacebrowser",
+				"patcherrelativepath" : "../../../tml-ossia/utilities/namespacebrowser",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "pvh.jugglealgo.maxpat",
-				"bootpath" : "~/src/Projects/PVH-cirk/01_02_2021_PREP_FOR_DELIVER/juggling",
+				"bootpath" : "~/src/PVH-cirk/01_02_2021_PREP_FOR_DELIVER/juggling",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
+				"name" : "pvh.scalecoll.module.maxpat",
+				"bootpath" : "~/src/PVH-jamomasave/pvh.scalecoll",
+				"patcherrelativepath" : "../../../PVH-jamomasave/pvh.scalecoll",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "pvh.scalecoll.model.maxpat",
+				"bootpath" : "~/src/PVH-jamomasave/pvh.scalecoll",
+				"patcherrelativepath" : "../../../PVH-jamomasave/pvh.scalecoll",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "pvh.scalecoll.view.maxpat",
+				"bootpath" : "~/src/PVH-jamomasave/pvh.scalecoll",
+				"patcherrelativepath" : "../../../PVH-jamomasave/pvh.scalecoll",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "pvh.johnson1.module.maxpat",
+				"bootpath" : "~/src/PVH-jamomasave/pvh.johnson1",
+				"patcherrelativepath" : "../../../PVH-jamomasave/pvh.johnson1",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "pvh.johnson1.view.maxpat",
+				"bootpath" : "~/src/PVH-jamomasave/pvh.johnson1",
+				"patcherrelativepath" : "../../../PVH-jamomasave/pvh.johnson1",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "pvh.johnson1.model.maxpat",
+				"bootpath" : "~/src/PVH-jamomasave/pvh.johnson1",
+				"patcherrelativepath" : "../../../PVH-jamomasave/pvh.johnson1",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "johnson1max_3.js",
+				"bootpath" : "~/src/PVH-jamomasave/pvh.johnson1/include",
+				"patcherrelativepath" : "../../../PVH-jamomasave/pvh.johnson1/include",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "ossia.nav.oscroute.module.maxpat",
-				"bootpath" : "~/src/Max/tml-ossia/nav/nav.oscroute",
-				"patcherrelativepath" : "../../../../Max/tml-ossia/nav/nav.oscroute",
+				"bootpath" : "~/src/tml-ossia/nav/nav.oscroute",
+				"patcherrelativepath" : "../../../tml-ossia/nav/nav.oscroute",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "simple_cues.maxpat",
-				"bootpath" : "~/src/Max/tml-ossia/utilities/simple_cues",
-				"patcherrelativepath" : "../../../../Max/tml-ossia/utilities/simple_cues",
+				"bootpath" : "~/src/tml-ossia/utilities/simple_cues",
+				"patcherrelativepath" : "../../../tml-ossia/utilities/simple_cues",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "cue_manager.module.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/Jamoma/patchers/models/data/cue_manager",
-				"patcherrelativepath" : "../../../../../Documents/Max 8/Packages/Jamoma/patchers/models/data/cue_manager",
+				"patcherrelativepath" : "../../../../Documents/Max 8/Packages/Jamoma/patchers/models/data/cue_manager",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "cue_manager.model.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/Jamoma/patchers/models/data/cue_manager",
-				"patcherrelativepath" : "../../../../../Documents/Max 8/Packages/Jamoma/patchers/models/data/cue_manager",
+				"patcherrelativepath" : "../../../../Documents/Max 8/Packages/Jamoma/patchers/models/data/cue_manager",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "cue_manager.view.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/Jamoma/patchers/models/data/cue_manager",
-				"patcherrelativepath" : "../../../../../Documents/Max 8/Packages/Jamoma/patchers/models/data/cue_manager",
+				"patcherrelativepath" : "../../../../Documents/Max 8/Packages/Jamoma/patchers/models/data/cue_manager",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "j.datetime.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/Jamoma/patchers/components/data/datetime",
-				"patcherrelativepath" : "../../../../../Documents/Max 8/Packages/Jamoma/patchers/components/data/datetime",
+				"patcherrelativepath" : "../../../../Documents/Max 8/Packages/Jamoma/patchers/components/data/datetime",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "j.namespace_selector.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/Jamoma/patchers/components/namespace/namespace_selector",
-				"patcherrelativepath" : "../../../../../Documents/Max 8/Packages/Jamoma/patchers/components/namespace/namespace_selector",
+				"patcherrelativepath" : "../../../../Documents/Max 8/Packages/Jamoma/patchers/components/namespace/namespace_selector",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "j.initialized.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/Jamoma/patchers/components/data/initialized",
-				"patcherrelativepath" : "../../../../../Documents/Max 8/Packages/Jamoma/patchers/components/data/initialized",
+				"patcherrelativepath" : "../../../../Documents/Max 8/Packages/Jamoma/patchers/components/data/initialized",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "knobby_emu.maxpat",
+				"bootpath" : "~/src/PVH-cirk/01_02_2021_PREP_FOR_DELIVER/midi",
+				"patcherrelativepath" : "../midi",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -4662,39 +4897,15 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "ossia.device.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.cue.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.init.mxo",
-				"type" : "iLaX"
-			}
-, 			{
 				"name" : "j.model.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.receive.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.message.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.send.mxo",
+				"name" : "j.parameter.mxo",
 				"type" : "iLaX"
 			}
 , 			{
 				"name" : "j.return.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.parameter.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -4707,6 +4918,30 @@
 			}
 , 			{
 				"name" : "j.remote.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.receive.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "ossia.device.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.cue.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.init.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.message.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.send.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -4732,11 +4967,10 @@
 , 			{
 				"name" : "jpink",
 				"default" : 				{
-					"accentcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
 					"elementcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
+					"bgcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
 					"color" : [ 0.619608, 0.0, 0.360784, 1.0 ],
-					"patchlinecolor" : [ 0.65, 0.65, 0.65, 1.0 ],
-					"textcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
+					"selectioncolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
 					"clearcolor" : [ 0.113725, 0.607843, 0.607843, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "color",
@@ -4748,8 +4982,9 @@
 						"autogradient" : 0
 					}
 ,
-					"bgcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
-					"selectioncolor" : [ 0.619608, 0.0, 0.360784, 1.0 ]
+					"patchlinecolor" : [ 0.65, 0.65, 0.65, 1.0 ],
+					"textcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
+					"accentcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
