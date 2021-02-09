@@ -6,7 +6,11 @@
 
 3) Load /juggling/18_12_2020_juggling8 Project/17_12_2020_juggling7.als in Ableton.
 
-4) Adjust levels of 3 clubs in MIDI-ctl interface that is part of the Max juggling patch (bottom left, 8 sliders).
+4) Load nav-sensor project.
+
+5) Select trio baton preset.
+
+6) Adjust levels of 3 clubs in MIDI-ctl interface that is part of the Max juggling patch (bottom left, 8 sliders).
 
 
 * Wheel
@@ -16,3 +20,7 @@
 2) select 'cue10' preset in simple cues.
 
 3) Load /wheel/18_12_2020_wheel2_FINALPATCH_SHOWTIME Project/18_12_2020_wheel2_FINALPATCH_SHOWTIME.als
+
+4) Load nav-sensor project.
+
+5) Select trio baton preset.
