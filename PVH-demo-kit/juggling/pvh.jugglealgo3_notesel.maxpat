@@ -3,16 +3,16 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 2,
-			"revision" : 0,
+			"minor" : 1,
+			"revision" : 8,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 531.0, 174.0, 959.0, 811.0 ],
+		"rect" : [ 447.0, 440.0, 959.0, 811.0 ],
 		"bglocked" : 0,
-		"openinpresentation" : 0,
+		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
 		"default_fontface" : 0,
 		"default_fontname" : "Arial",
@@ -40,29 +40,43 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-23",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 360.0, 30.0, 60.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 45.0, 45.0, 60.0, 20.0 ],
+					"text" : "metro ms"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"format" : 6,
+					"id" : "obj-18",
+					"maxclass" : "flonum",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 315.0, 30.0, 50.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 45.0, 60.0, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-19",
 					"maxclass" : "number",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 75.0, 810.0, 50.0, 22.0 ],
+					"patching_rect" : [ 75.0, 840.0, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 15.0, 660.0, 50.0, 22.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-16",
-					"maxclass" : "number",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 225.0, 630.0, 50.0, 22.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 195.0, 330.0, 50.0, 22.0 ]
+					"presentation_rect" : [ 15.0, 645.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -77,8 +91,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 2,
-							"revision" : 0,
+							"minor" : 1,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -382,7 +396,6 @@
 					"enablevscroll" : 0,
 					"id" : "obj-28",
 					"lockeddragscroll" : 0,
-					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "pvh.switch.module.maxpat",
 					"numinlets" : 2,
@@ -406,7 +419,6 @@
 					"enablevscroll" : 0,
 					"id" : "obj-26",
 					"lockeddragscroll" : 0,
-					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "pvh.switch.module.maxpat",
 					"numinlets" : 2,
@@ -445,7 +457,6 @@
 					"enablevscroll" : 0,
 					"id" : "obj-12",
 					"lockeddragscroll" : 0,
-					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "pvh.randomoctave.module.maxpat",
 					"numinlets" : 1,
@@ -541,7 +552,6 @@
 					"enablevscroll" : 0,
 					"id" : "obj-33",
 					"lockeddragscroll" : 0,
-					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "pvh.johnson1.module.maxpat",
 					"numinlets" : 1,
@@ -565,16 +575,15 @@
 					"enablevscroll" : 0,
 					"id" : "obj-14",
 					"lockeddragscroll" : 0,
-					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "pvh.messynotesel.module.maxpat",
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 15.0, 450.0, 150.0, 315.0 ],
+					"patching_rect" : [ 15.0, 480.0, 150.0, 315.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 15.0, 345.0, 150.0, 315.0 ],
+					"presentation_rect" : [ 15.0, 330.0, 150.0, 315.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -587,7 +596,9 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 270.0, 30.0, 24.0, 24.0 ]
+					"patching_rect" : [ 270.0, 30.0, 24.0, 24.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 15.0, 60.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -686,7 +697,6 @@
 					"enablevscroll" : 0,
 					"id" : "obj-20",
 					"lockeddragscroll" : 0,
-					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "pvh.johnson1.module.maxpat",
 					"numinlets" : 1,
@@ -731,7 +741,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 15.0, 795.0, 29.5, 22.0 ],
+					"patching_rect" : [ 15.0, 825.0, 29.5, 22.0 ],
 					"text" : "+"
 				}
 
@@ -769,7 +779,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 15.0, 840.0, 30.0, 30.0 ]
+					"patching_rect" : [ 15.0, 870.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -817,17 +827,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-16", 0 ],
-					"order" : 0,
-					"source" : [ "obj-11", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-9", 1 ],
-					"midpoints" : [ 204.5, 780.0, 35.0, 780.0 ],
-					"order" : 1,
+					"midpoints" : [ 204.5, 815.0, 35.0, 815.0 ],
 					"source" : [ "obj-11", 0 ]
 				}
 
@@ -867,6 +868,13 @@
 					"destination" : [ "obj-11", 0 ],
 					"midpoints" : [ 234.5, 585.0, 204.5, 585.0 ],
 					"source" : [ "obj-17", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-8", 1 ],
+					"source" : [ "obj-18", 0 ]
 				}
 
 			}
@@ -1161,29 +1169,29 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "pvh.johnson1.module.maxpat",
-				"bootpath" : "~/src/PVH-maxlib/pvh.johnson1",
-				"patcherrelativepath" : "../../../PVH-maxlib/pvh.johnson1",
+				"bootpath" : "~/src/PVH-jamomasave/pvh.johnson1",
+				"patcherrelativepath" : "../../../PVH-jamomasave/pvh.johnson1",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "pvh.johnson1.view.maxpat",
-				"bootpath" : "~/src/PVH-maxlib/pvh.johnson1",
-				"patcherrelativepath" : "../../../PVH-maxlib/pvh.johnson1",
+				"bootpath" : "~/src/PVH-jamomasave/pvh.johnson1",
+				"patcherrelativepath" : "../../../PVH-jamomasave/pvh.johnson1",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "pvh.johnson1.model.maxpat",
-				"bootpath" : "~/src/PVH-maxlib/pvh.johnson1",
-				"patcherrelativepath" : "../../../PVH-maxlib/pvh.johnson1",
+				"bootpath" : "~/src/PVH-jamomasave/pvh.johnson1",
+				"patcherrelativepath" : "../../../PVH-jamomasave/pvh.johnson1",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "johnson1max_3.js",
-				"bootpath" : "~/src/PVH-maxlib_ossia/control/ossia.pvh.johnson1/include",
-				"patcherrelativepath" : "../../../PVH-maxlib_ossia/control/ossia.pvh.johnson1/include",
+				"bootpath" : "~/src/PVH-jamomasave/pvh.johnson1/include",
+				"patcherrelativepath" : "../../../PVH-jamomasave/pvh.johnson1/include",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
@@ -1297,14 +1305,7 @@
 , 			{
 				"name" : "jpink",
 				"default" : 				{
-					"bgcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
-					"color" : [ 0.619608, 0.0, 0.360784, 1.0 ],
-					"accentcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
-					"selectioncolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
-					"elementcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
-					"textcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
 					"clearcolor" : [ 0.113725, 0.607843, 0.607843, 1.0 ],
-					"patchlinecolor" : [ 0.65, 0.65, 0.65, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "color",
 						"color" : [ 0.619608, 0.0, 0.360784, 1.0 ],
@@ -1314,7 +1315,14 @@
 						"proportion" : 0.39,
 						"autogradient" : 0
 					}
-
+,
+					"selectioncolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
+					"accentcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
+					"elementcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
+					"textcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
+					"color" : [ 0.619608, 0.0, 0.360784, 1.0 ],
+					"patchlinecolor" : [ 0.65, 0.65, 0.65, 1.0 ],
+					"bgcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
