@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 8,
+			"revision" : 11,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 670.0, 136.0, 571.0, 811.0 ],
+		"rect" : [ 679.0, 117.0, 571.0, 811.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,6 +40,18 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-19",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 240.0, 270.0, 55.0, 22.0 ],
+					"text" : "pipe 100"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"args" : [ "#1-pitchbase" ],
 					"bgmode" : 0,
 					"border" : 0,
@@ -68,7 +80,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 225.0, 300.0, 70.0, 22.0 ],
+					"patching_rect" : [ 240.0, 240.0, 70.0, 22.0 ],
 					"text" : "loadmess 1"
 				}
 
@@ -133,7 +145,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 8,
+							"revision" : 11,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -550,7 +562,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 8,
+							"revision" : 11,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1025,7 +1037,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "notesel1" ],
+					"args" : [ "#1-notesel1" ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -1088,11 +1100,11 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-4",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 135.0, 15.0, 30.0, 30.0 ]
 				}
 
@@ -1220,11 +1232,11 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-1",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "float" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 15.0, 15.0, 30.0, 30.0 ]
 				}
 
@@ -1233,7 +1245,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-7",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -1363,6 +1375,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-44", 1 ],
+					"source" : [ "obj-19", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
 					"source" : [ "obj-20", 0 ]
 				}
@@ -1378,7 +1397,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-44", 1 ],
+					"destination" : [ "obj-19", 0 ],
 					"source" : [ "obj-24", 0 ]
 				}
 
@@ -1711,6 +1730,223 @@
 
 			}
  ],
+		"parameters" : 		{
+			"obj-14::obj-2::obj-143" : [ "live.text[337]", "live.text", 0 ],
+			"obj-16::obj-2::obj-7" : [ "live.menu[23]", "live.menu", 0 ],
+			"obj-20::obj-2::obj-144" : [ "live.text[26]", "live.text", 0 ],
+			"obj-20::obj-2::obj-145" : [ "live.text[25]", "live.text", 0 ],
+			"obj-20::obj-2::obj-183" : [ "live.numbox[9]", "live.numbox", 0 ],
+			"obj-29::obj-2::obj-7" : [ "live.menu[25]", "live.menu", 0 ],
+			"obj-33::obj-2::obj-144" : [ "live.text[1]", "live.text", 0 ],
+			"obj-33::obj-2::obj-145" : [ "live.text[2]", "live.text", 0 ],
+			"obj-33::obj-2::obj-183" : [ "live.numbox[1]", "live.numbox", 0 ],
+			"obj-38::obj-2::obj-7" : [ "live.menu", "live.menu", 0 ],
+			"parameterbanks" : 			{
+
+			}
+,
+			"parameter_overrides" : 			{
+				"obj-33::obj-2::obj-144" : 				{
+					"parameter_longname" : "live.text[1]"
+				}
+,
+				"obj-33::obj-2::obj-145" : 				{
+					"parameter_longname" : "live.text[2]"
+				}
+,
+				"obj-33::obj-2::obj-183" : 				{
+					"parameter_longname" : "live.numbox[1]"
+				}
+
+			}
+,
+			"inherited_shortname" : 1
+		}
+,
+		"dependency_cache" : [ 			{
+				"name" : "pvh.johnson1.module.maxpat",
+				"bootpath" : "~/src/PVH-maxlib/pvh.johnson1",
+				"patcherrelativepath" : "../../../PVH-maxlib/pvh.johnson1",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "pvh.johnson1.view.maxpat",
+				"bootpath" : "~/src/PVH-maxlib/pvh.johnson1",
+				"patcherrelativepath" : "../../../PVH-maxlib/pvh.johnson1",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "pvh.johnson1.model.maxpat",
+				"bootpath" : "~/src/PVH-maxlib/pvh.johnson1",
+				"patcherrelativepath" : "../../../PVH-maxlib/pvh.johnson1",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "johnson1max_3.js",
+				"bootpath" : "~/src/PVH-maxlib_ossia/control/ossia.pvh.johnson1/include",
+				"patcherrelativepath" : "../../../PVH-maxlib_ossia/control/ossia.pvh.johnson1/include",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "pvh.messynotesel.module.maxpat",
+				"bootpath" : "~/src/PVH-maxlib/pvh.messynotesel",
+				"patcherrelativepath" : "../../../PVH-maxlib/pvh.messynotesel",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "pvh.messynotesel.view.maxpat",
+				"bootpath" : "~/src/PVH-maxlib/pvh.messynotesel",
+				"patcherrelativepath" : "../../../PVH-maxlib/pvh.messynotesel",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "pvh.messynotesel.model.maxpat",
+				"bootpath" : "~/src/PVH-maxlib/pvh.messynotesel",
+				"patcherrelativepath" : "../../../PVH-maxlib/pvh.messynotesel",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "pvh.randomoctave.module.maxpat",
+				"bootpath" : "~/src/PVH-maxlib/pvh.randomoctave",
+				"patcherrelativepath" : "../../../PVH-maxlib/pvh.randomoctave",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "pvh.randomoctave.view.maxpat",
+				"bootpath" : "~/src/PVH-maxlib/pvh.randomoctave",
+				"patcherrelativepath" : "../../../PVH-maxlib/pvh.randomoctave",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "pvh.randomoctave.model.maxpat",
+				"bootpath" : "~/src/PVH-maxlib/pvh.randomoctave",
+				"patcherrelativepath" : "../../../PVH-maxlib/pvh.randomoctave",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "pvh.switch.module.maxpat",
+				"bootpath" : "~/src/PVH-maxlib/pvh.switch",
+				"patcherrelativepath" : "../../../PVH-maxlib/pvh.switch",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "pvh.switch.view.maxpat",
+				"bootpath" : "~/src/PVH-maxlib/pvh.switch",
+				"patcherrelativepath" : "../../../PVH-maxlib/pvh.switch",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "pvh.switch.model.maxpat",
+				"bootpath" : "~/src/PVH-maxlib/pvh.switch",
+				"patcherrelativepath" : "../../../PVH-maxlib/pvh.switch",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "pvh.octavebase.module.maxpat",
+				"bootpath" : "~/src/PVH-maxlib/pvh.octavebase",
+				"patcherrelativepath" : "../../../PVH-maxlib/pvh.octavebase",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "pvh.octavebase.model.maxpat",
+				"bootpath" : "~/src/PVH-maxlib/pvh.octavebase",
+				"patcherrelativepath" : "../../../PVH-maxlib/pvh.octavebase",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "pvh.octavebase.view.maxpat",
+				"bootpath" : "~/src/PVH-maxlib/pvh.octavebase",
+				"patcherrelativepath" : "../../../PVH-maxlib/pvh.octavebase",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "pvh.scalecoll.module.maxpat",
+				"bootpath" : "~/src/PVH-maxlib/pvh.scalecoll",
+				"patcherrelativepath" : "../../../PVH-maxlib/pvh.scalecoll",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "pvh.scalecoll.model.maxpat",
+				"bootpath" : "~/src/PVH-maxlib/pvh.scalecoll",
+				"patcherrelativepath" : "../../../PVH-maxlib/pvh.scalecoll",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "pvh.scalecoll.view.maxpat",
+				"bootpath" : "~/src/PVH-maxlib/pvh.scalecoll",
+				"patcherrelativepath" : "../../../PVH-maxlib/pvh.scalecoll",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "pvh.pitchbase.module.maxpat",
+				"bootpath" : "~/src/PVH-maxlib/pvh.pitchbase",
+				"patcherrelativepath" : "../../../PVH-maxlib/pvh.pitchbase",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "pvh.pitchbase.model.maxpat",
+				"bootpath" : "~/src/PVH-maxlib/pvh.pitchbase",
+				"patcherrelativepath" : "../../../PVH-maxlib/pvh.pitchbase",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "pvh.pitchbase.view.maxpat",
+				"bootpath" : "~/src/PVH-maxlib/pvh.pitchbase",
+				"patcherrelativepath" : "../../../PVH-maxlib/pvh.pitchbase",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "j.ui.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.view.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.remote.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.model.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.parameter.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.return.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.receive.mxo",
+				"type" : "iLaX"
+			}
+ ],
+		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "Jamoma_highlighted_orange",
 				"default" : 				{
@@ -1728,10 +1964,6 @@
 , 			{
 				"name" : "jpink",
 				"default" : 				{
-					"color" : [ 0.619608, 0.0, 0.360784, 1.0 ],
-					"bgcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
-					"patchlinecolor" : [ 0.65, 0.65, 0.65, 1.0 ],
-					"clearcolor" : [ 0.113725, 0.607843, 0.607843, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "color",
 						"color" : [ 0.619608, 0.0, 0.360784, 1.0 ],
@@ -1742,10 +1974,14 @@
 						"autogradient" : 0
 					}
 ,
-					"accentcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
 					"selectioncolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
+					"accentcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
+					"elementcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
+					"patchlinecolor" : [ 0.65, 0.65, 0.65, 1.0 ],
+					"bgcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
+					"color" : [ 0.619608, 0.0, 0.360784, 1.0 ],
 					"textcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
-					"elementcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ]
+					"clearcolor" : [ 0.113725, 0.607843, 0.607843, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
