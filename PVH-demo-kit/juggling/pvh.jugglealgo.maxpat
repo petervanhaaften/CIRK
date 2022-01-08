@@ -40,55 +40,6 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-19",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 315.0, 15.0, 83.0, 22.0 ],
-					"text" : "loadmess 200"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"format" : 6,
-					"id" : "obj-15",
-					"maxclass" : "flonum",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 210.0, 735.0, 50.0, 22.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 15.0, 525.0, 50.0, 22.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgmode" : 0,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-12",
-					"lockeddragscroll" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "pvh.pitchbase.module.maxpat",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "int" ],
-					"patching_rect" : [ 15.0, 630.0, 150.0, 70.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 15.0, 450.0, 150.0, 70.0 ],
-					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"format" : 6,
 					"id" : "obj-28",
 					"maxclass" : "flonum",
@@ -96,7 +47,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 255.0, 675.0, 50.0, 22.0 ],
+					"patching_rect" : [ 60.0, 630.0, 50.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 15.0, 420.0, 50.0, 22.0 ]
 				}
@@ -396,7 +347,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 15.0, 720.0, 30.0, 30.0 ]
+					"patching_rect" : [ 15.0, 645.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -441,22 +392,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-15", 0 ],
-					"order" : 0,
-					"source" : [ "obj-12", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-7", 0 ],
-					"order" : 1,
-					"source" : [ "obj-12", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-8", 0 ],
 					"source" : [ "obj-13", 0 ]
 				}
@@ -481,13 +416,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-16", 0 ],
 					"source" : [ "obj-18", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-21", 0 ],
-					"source" : [ "obj-19", 0 ]
 				}
 
 			}
@@ -574,24 +502,22 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-12", 0 ],
-					"order" : 1,
-					"source" : [ "obj-9", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-28", 0 ],
 					"order" : 0,
 					"source" : [ "obj-9", 0 ]
 				}
 
 			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-7", 0 ],
+					"order" : 1,
+					"source" : [ "obj-9", 0 ]
+				}
+
+			}
  ],
 		"parameters" : 		{
-			"obj-12::obj-2::obj-7" : [ "live.menu[1]", "live.menu", 0 ],
-			"obj-16::obj-2::obj-7" : [ "live.menu", "live.menu", 0 ],
 			"obj-20::obj-2::obj-144" : [ "live.text[26]", "live.text", 0 ],
 			"obj-20::obj-2::obj-145" : [ "live.text[25]", "live.text", 0 ],
 			"obj-20::obj-2::obj-183" : [ "live.numbox[9]", "live.numbox", 0 ],
@@ -603,10 +529,6 @@
 			}
 ,
 			"parameter_overrides" : 			{
-				"obj-12::obj-2::obj-7" : 				{
-					"parameter_longname" : "live.menu[1]"
-				}
-,
 				"obj-2::obj-2::obj-144" : 				{
 					"parameter_longname" : "live.text[1]"
 				}
@@ -626,22 +548,22 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "pvh.scalecoll.module.maxpat",
-				"bootpath" : "~/src/PVH-maxlib/pvh.scalecoll",
-				"patcherrelativepath" : "../../../PVH-maxlib/pvh.scalecoll",
+				"bootpath" : "~/src/PVH-jamomasave/pvh.scalecoll",
+				"patcherrelativepath" : "../../../PVH-jamomasave/pvh.scalecoll",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "pvh.scalecoll.model.maxpat",
-				"bootpath" : "~/src/PVH-maxlib/pvh.scalecoll",
-				"patcherrelativepath" : "../../../PVH-maxlib/pvh.scalecoll",
+				"bootpath" : "~/src/PVH-jamomasave/pvh.scalecoll",
+				"patcherrelativepath" : "../../../PVH-jamomasave/pvh.scalecoll",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "pvh.scalecoll.view.maxpat",
-				"bootpath" : "~/src/PVH-maxlib/pvh.scalecoll",
-				"patcherrelativepath" : "../../../PVH-maxlib/pvh.scalecoll",
+				"bootpath" : "~/src/PVH-jamomasave/pvh.scalecoll",
+				"patcherrelativepath" : "../../../PVH-jamomasave/pvh.scalecoll",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -671,27 +593,6 @@
 				"bootpath" : "~/src/PVH-jamomasave/pvh.johnson1/include",
 				"patcherrelativepath" : "../../../PVH-jamomasave/pvh.johnson1/include",
 				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "pvh.pitchbase.module.maxpat",
-				"bootpath" : "~/src/PVH-maxlib/pvh.pitchbase",
-				"patcherrelativepath" : "../../../PVH-maxlib/pvh.pitchbase",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "pvh.pitchbase.model.maxpat",
-				"bootpath" : "~/src/PVH-maxlib/pvh.pitchbase",
-				"patcherrelativepath" : "../../../PVH-maxlib/pvh.pitchbase",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "pvh.pitchbase.view.maxpat",
-				"bootpath" : "~/src/PVH-maxlib/pvh.pitchbase",
-				"patcherrelativepath" : "../../../PVH-maxlib/pvh.pitchbase",
-				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
@@ -741,7 +642,6 @@
 , 			{
 				"name" : "jpink",
 				"default" : 				{
-					"color" : [ 0.619608, 0.0, 0.360784, 1.0 ],
 					"clearcolor" : [ 0.113725, 0.607843, 0.607843, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "color",
@@ -755,10 +655,11 @@
 ,
 					"selectioncolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
 					"accentcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
-					"textcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
 					"elementcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
-					"bgcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
-					"patchlinecolor" : [ 0.65, 0.65, 0.65, 1.0 ]
+					"textcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
+					"color" : [ 0.619608, 0.0, 0.360784, 1.0 ],
+					"patchlinecolor" : [ 0.65, 0.65, 0.65, 1.0 ],
+					"bgcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
