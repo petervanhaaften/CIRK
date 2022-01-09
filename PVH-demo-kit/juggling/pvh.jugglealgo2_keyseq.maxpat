@@ -10,18 +10,18 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 670.0, 101.0, 877.0, 799.0 ],
+		"rect" : [ 192.0, 161.0, 325.0, 786.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
 		"default_fontface" : 0,
-		"default_fontname" : "Arial",
+		"default_fontname" : "Arial Bold",
 		"gridonopen" : 2,
 		"gridsize" : [ 15.0, 15.0 ],
-		"gridsnaponopen" : 2,
+		"gridsnaponopen" : 1,
 		"objectsnaponopen" : 0,
 		"statusbarvisible" : 2,
-		"toolbarvisible" : 1,
+		"toolbarvisible" : 0,
 		"lefttoolbarpinned" : 0,
 		"toptoolbarpinned" : 0,
 		"righttoolbarpinned" : 0,
@@ -29,8 +29,8 @@
 		"toolbars_unpinned_last_save" : 0,
 		"tallnewobj" : 0,
 		"boxanimatetime" : 200,
-		"enablehscroll" : 1,
-		"enablevscroll" : 1,
+		"enablehscroll" : 0,
+		"enablevscroll" : 0,
 		"devicewidth" : 0.0,
 		"description" : "",
 		"digest" : "",
@@ -40,8 +40,283 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-82",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 37.0, 679.0, 150.0, 47.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 2,
+					"presentation_rect" : [ 167.0, 537.0, 159.0, 33.0 ],
+					"text" : "for help programming 'the algorithm', double click:"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"color" : [ 1.0, 0.0, 0.0, 1.0 ],
+					"id" : "obj-80",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 0,
+					"patcher" : 					{
+						"fileversion" : 1,
+						"appversion" : 						{
+							"major" : 8,
+							"minor" : 1,
+							"revision" : 8,
+							"architecture" : "x64",
+							"modernui" : 1
+						}
+,
+						"classnamespace" : "box",
+						"rect" : [ 59.0, 104.0, 411.0, 480.0 ],
+						"bglocked" : 0,
+						"openinpresentation" : 0,
+						"default_fontsize" : 12.0,
+						"default_fontface" : 0,
+						"default_fontname" : "Arial",
+						"gridonopen" : 2,
+						"gridsize" : [ 15.0, 15.0 ],
+						"gridsnaponopen" : 2,
+						"objectsnaponopen" : 0,
+						"statusbarvisible" : 2,
+						"toolbarvisible" : 1,
+						"lefttoolbarpinned" : 0,
+						"toptoolbarpinned" : 0,
+						"righttoolbarpinned" : 0,
+						"bottomtoolbarpinned" : 0,
+						"toolbars_unpinned_last_save" : 0,
+						"tallnewobj" : 0,
+						"boxanimatetime" : 200,
+						"enablehscroll" : 1,
+						"enablevscroll" : 1,
+						"devicewidth" : 0.0,
+						"description" : "",
+						"digest" : "",
+						"tags" : "",
+						"style" : "",
+						"subpatcher_template" : "evan",
+						"assistshowspatchername" : 0,
+						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-5",
+									"linecount" : 27,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 8.0, 83.0, 371.0, 368.0 ],
+									"text" : "This algorithm is a very simple find and replace algorithm. In the printed example below, we begin with an origin sequence such as “100”. We also create a “zero” sequence and a “one” sequence. We then replace each character in the origin with the corresponding “zero” or “one” sequence.\n\nOrigin: 100 \n\nSeq0: 010\n\nSeq1: 110\n\nFirst iteration: \n110 010 010\n\nSecond iteration:\n110 110 010 010 110 010 010 010\n\nThird iteration:\n110 110 010 110 110 010 010 110 010 010 110 010 110 110 010 010 110 010 010 110 010 010 110 010\n\n. . . etc.\n\n\tMy version of the algorithm has been modified to operate with up to eight sequence values (Seq0-Seq7), as opposed to the two sequence values used in Johnson’s original algorithm. "
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-3",
+									"linecount" : 4,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 8.0, 15.0, 150.0, 60.0 ],
+									"text" : "Based on “Transforming Ones and Zeros” (Johnson, Self-Similar Melodies, 1996, p. 73)"
+								}
+
+							}
+ ],
+						"lines" : [  ]
+					}
+,
+					"patching_rect" : [ 529.0, 626.0, 100.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 227.0, 566.0, 89.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"description" : "",
+						"digest" : "",
+						"globalpatchername" : "",
+						"tags" : ""
+					}
+,
+					"text" : "p ALGO HELP"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-39",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 180.0, 30.0, 87.0, 22.0 ],
+					"text" : "loadmess 250"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial Bold",
+					"id" : "obj-51",
+					"linecount" : 4,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 177.0, 249.0, 159.0, 60.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 4,
+					"presentation_rect" : [ 165.0, 272.0, 159.0, 60.0 ],
+					"text" : "2. select number of steps, for example, with three notes inside of sequence editor, set this to 3."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"id" : "obj-49",
+					"linecount" : 5,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 176.0, 286.0, 157.0, 74.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 5,
+					"presentation_rect" : [ 165.0, 189.0, 145.0, 74.0 ],
+					"text" : "<-- alternately, select a cell in above sequence editor, then select note on keyboard interface, then hit SET button. "
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"id" : "obj-47",
+					"linecount" : 9,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 200.0, 106.0, 145.0, 127.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 9,
+					"presentation_rect" : [ 166.0, 59.0, 145.0, 127.0 ],
+					"text" : "[ when inputting notes into this sequence editor, sharp notes should always be indicated with a # (example: C#), while flat notes should always be indicated with a lowercase b (example: Bb) ]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-45",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 114.0, 742.0, 150.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 2,
+					"presentation_rect" : [ 12.0, 747.0, 77.0, 33.0 ],
+					"text" : "midi note out"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-44",
+					"linecount" : 4,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 555.0, 270.0, 150.0, 60.0 ],
+					"text" : "note: this octave selection (algo & random) happen before the glub octave offset"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial Bold",
+					"id" : "obj-42",
+					"linecount" : 4,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 195.0, 435.0, 151.0, 60.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 4,
+					"presentation_rect" : [ 159.0, 671.0, 131.0, 60.0 ],
+					"text" : "4. select club octave offset, how many octaves to add to incoming pitch."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial Bold",
+					"id" : "obj-40",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 435.0, 15.0, 152.0, 47.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 6.0, 350.0, 287.0, 20.0 ],
+					"text" : "3. select algorithmic octave selection, or random"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial Bold",
+					"id" : "obj-38",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 195.0, 150.0, 151.0, 33.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 2,
+					"presentation_rect" : [ 165.0, 5.0, 111.0, 33.0 ],
+					"text" : "1. Input notes\n(ie: C, C#, Db,  . . )"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-25",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"patching_rect" : [ -90.0, 15.0, 33.0, 22.0 ],
+					"text" : "== 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"color" : [ 0.952941, 0.564706, 0.098039, 1.0 ],
+					"id" : "obj-22",
+					"linecount" : 3,
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ -90.0, -15.0, 182.0, 49.0 ],
+					"text" : "r #1_pvhalgoselect"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-29",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 15.0, 60.0, 33.0, 22.0 ],
+					"text" : "gate"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"format" : 6,
 					"id" : "obj-24",
+					"ignoreclick" : 1,
 					"maxclass" : "flonum",
 					"numinlets" : 1,
 					"numoutlets" : 2,
@@ -49,7 +324,8 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 90.0, 825.0, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 15.0, 480.0, 50.0, 22.0 ]
+					"presentation_rect" : [ 91.0, 746.0, 44.0, 22.0 ],
+					"triangle" : 0
 				}
 
 			}
@@ -71,20 +347,22 @@
 					"outlettype" : [ "int" ],
 					"patching_rect" : [ 15.0, 720.0, 150.0, 70.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 15.0, 405.0, 150.0, 70.0 ],
+					"presentation_rect" : [ 6.0, 673.0, 150.0, 70.0 ],
 					"viewvisibility" : 1
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"fontname" : "Arial",
 					"id" : "obj-3",
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 360.0, 30.0, 60.0, 20.0 ],
+					"patching_rect" : [ 360.0, 30.0, 58.0, 33.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 60.0, 0.0, 60.0, 20.0 ],
+					"presentation_rect" : [ 83.0, 4.0, 63.0, 20.0 ],
 					"text" : "metro ms"
 				}
 
@@ -100,7 +378,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 315.0, 30.0, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 60.0, 15.0, 50.0, 22.0 ]
+					"presentation_rect" : [ 30.0, 4.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -119,6 +397,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-68",
+					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 2,
@@ -358,7 +637,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 480.0, 75.0, 101.0, 22.0 ],
+					"patching_rect" : [ 480.0, 75.0, 101.0, 35.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -373,11 +652,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-59",
+					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 465.0, 150.0, 32.0, 22.0 ],
+					"patching_rect" : [ 465.0, 150.0, 32.0, 35.0 ],
 					"text" : "gate"
 				}
 
@@ -385,11 +665,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-58",
+					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 195.0, 150.0, 32.0, 22.0 ],
+					"patching_rect" : [ 195.0, 150.0, 32.0, 35.0 ],
 					"text" : "gate"
 				}
 
@@ -403,7 +684,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 540.0, 15.0, 152.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 360.0, 45.0, 152.0, 20.0 ],
+					"presentation_rect" : [ 178.0, 367.0, 114.0, 20.0 ],
 					"text" : "RANDOM OCTAVE"
 				}
 
@@ -417,8 +698,8 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 405.0, 15.0, 152.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 180.0, 45.0, 152.0, 20.0 ],
-					"text" : "JOHNSON OCTAVE"
+					"presentation_rect" : [ 25.0, 368.0, 95.0, 20.0 ],
+					"text" : "ALGO OCTAVE"
 				}
 
 			}
@@ -440,7 +721,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 540.0, 30.0, 90.0, 45.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 360.0, 60.0, 90.0, 45.0 ],
+					"presentation_rect" : [ 195.0, 382.0, 90.0, 45.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -463,7 +744,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 405.0, 30.0, 90.0, 45.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 180.0, 60.0, 90.0, 45.0 ],
+					"presentation_rect" : [ 25.0, 383.0, 90.0, 45.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -477,9 +758,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 495.0, 255.0, 50.0, 22.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 360.0, 180.0, 50.0, 22.0 ]
+					"patching_rect" : [ 495.0, 255.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -501,7 +780,7 @@
 					"outlettype" : [ "int", "" ],
 					"patching_rect" : [ 465.0, 180.0, 150.0, 70.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 360.0, 105.0, 150.0, 70.0 ],
+					"presentation_rect" : [ 166.0, 419.0, 150.0, 70.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -617,11 +896,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-19",
+					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 10,
 					"numoutlets" : 10,
 					"outlettype" : [ "bang", "bang", "bang", "bang", "bang", "bang", "bang", "bang", "bang", "" ],
-					"patching_rect" : [ 195.0, 435.0, 114.0, 22.0 ],
+					"patching_rect" : [ 195.0, 435.0, 114.0, 35.0 ],
 					"text" : "sel 0 1 2 3 4 5 6 7 8"
 				}
 
@@ -647,9 +927,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 60.0, 600.0, 50.0, 22.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 15.0, 375.0, 50.0, 22.0 ]
+					"patching_rect" : [ 60.0, 600.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -661,7 +939,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 15.0, 465.0, 50.0, 22.0 ],
-					"text" : "45"
+					"text" : "0."
 				}
 
 			}
@@ -683,7 +961,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 15.0, 135.0, 150.0, 315.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 15.0, 45.0, 150.0, 315.0 ],
+					"presentation_rect" : [ 6.0, 27.0, 150.0, 315.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -698,18 +976,19 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 270.0, 30.0, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 30.0, 15.0, 24.0, 24.0 ]
+					"presentation_rect" : [ 8.0, 4.0, 24.0, 24.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"id" : "obj-8",
+					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 270.0, 60.0, 63.0, 22.0 ],
+					"patching_rect" : [ 270.0, 60.0, 63.0, 35.0 ],
 					"text" : "metro 200"
 				}
 
@@ -722,7 +1001,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 75.0, 45.0, 24.0, 24.0 ]
+					"patching_rect" : [ 90.0, -30.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -757,7 +1036,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 195.0, 180.0, 150.0, 245.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 180.0, 105.0, 150.0, 245.0 ],
+					"presentation_rect" : [ 4.0, 419.0, 150.0, 245.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -765,11 +1044,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-10",
+					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "bang" ],
-					"patching_rect" : [ 15.0, 90.0, 32.0, 22.0 ],
+					"patching_rect" : [ 15.0, 90.0, 32.0, 35.0 ],
 					"text" : "t b b"
 				}
 
@@ -789,11 +1069,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-5",
+					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 15.0, 60.0, 34.0, 22.0 ],
+					"patching_rect" : [ 30.0, -15.0, 34.0, 35.0 ],
 					"text" : "sel 1"
 				}
 
@@ -807,7 +1088,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 15.0, 15.0, 30.0, 30.0 ]
+					"patching_rect" : [ 30.0, -60.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -1025,6 +1306,20 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-25", 0 ],
+					"source" : [ "obj-22", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-29", 0 ],
+					"source" : [ "obj-25", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-58", 0 ],
 					"midpoints" : [ 485.5, 78.0, 465.0, 78.0, 465.0, 135.0, 204.5, 135.0 ],
 					"order" : 1,
@@ -1056,6 +1351,13 @@
 					"midpoints" : [ 620.5, 78.0, 582.0, 78.0, 582.0, 72.0, 571.5, 72.0 ],
 					"order" : 0,
 					"source" : [ "obj-28", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-10", 0 ],
+					"source" : [ "obj-29", 0 ]
 				}
 
 			}
@@ -1125,15 +1427,22 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-10", 0 ],
-					"midpoints" : [ 144.5, 87.0, 24.5, 87.0 ],
+					"destination" : [ "obj-11", 0 ],
+					"source" : [ "obj-39", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-29", 1 ],
+					"midpoints" : [ 144.5, 87.0, 38.5, 87.0 ],
 					"source" : [ "obj-4", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-10", 0 ],
+					"destination" : [ "obj-29", 1 ],
 					"source" : [ "obj-5", 0 ]
 				}
 
@@ -1179,7 +1488,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-10", 0 ],
+					"destination" : [ "obj-29", 1 ],
 					"source" : [ "obj-8", 0 ]
 				}
 
@@ -1218,12 +1527,7 @@
 , 			{
 				"name" : "jpink",
 				"default" : 				{
-					"accentcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
 					"patchlinecolor" : [ 0.65, 0.65, 0.65, 1.0 ],
-					"elementcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
-					"textcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
-					"color" : [ 0.619608, 0.0, 0.360784, 1.0 ],
-					"selectioncolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
 					"bgcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
 					"clearcolor" : [ 0.113725, 0.607843, 0.607843, 1.0 ],
 					"bgfillcolor" : 					{
@@ -1235,7 +1539,12 @@
 						"proportion" : 0.39,
 						"autogradient" : 0
 					}
-
+,
+					"selectioncolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
+					"textcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
+					"accentcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
+					"elementcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
+					"color" : [ 0.619608, 0.0, 0.360784, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
